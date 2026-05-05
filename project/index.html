@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fegurd Spa — Belleza, Bienestar y Rituales Premium</title>
+  <meta name="description" content="Fegurd Spa: rituales de belleza, masajes deportivos, limpieza facial profunda y experiencias para parejas. Reserva hoy y transforma tu bienestar." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="hero-v2.css?v=1" />
+</head>
+<body>
+
+  <!-- ═══════ SPLASH INTRO (logo reveal) ═══════ -->
+  <div class="splash" id="splash" aria-hidden="true">
+    <div class="splash-bg">
+      <span class="sp-blob sp-blob--a"></span>
+      <span class="sp-blob sp-blob--b"></span>
+      <span class="sp-blob sp-blob--c"></span>
+    </div>
+    <div class="splash-grain"></div>
+
+    <div class="splash-stage">
+      <div class="splash-rings" aria-hidden="true">
+        <span class="sp-ring sp-ring--1"></span>
+        <span class="sp-ring sp-ring--2"></span>
+        <span class="sp-ring sp-ring--3"></span>
+      </div>
+
+      <div class="splash-shimmer" aria-hidden="true"></div>
+
+      <div class="splash-logo-wrap">
+        <span class="sp-mark sp-mark--tl">✦</span>
+        <span class="sp-mark sp-mark--tr">✦</span>
+        <span class="sp-mark sp-mark--bl">✦</span>
+        <span class="sp-mark sp-mark--br">✦</span>
+        <img src="assets/img/logo.png" alt="Fegurd Spa" class="splash-logo" />
+      </div>
+
+      <p class="splash-tag">
+        <span>B</span><span>e</span><span>l</span><span>l</span><span>e</span><span>z</span><span>a</span>
+        <span class="sp-dot">·</span>
+        <span>B</span><span>i</span><span>e</span><span>n</span><span>e</span><span>s</span><span>t</span><span>a</span><span>r</span>
+        <span class="sp-dot">·</span>
+        <span>R</span><span>i</span><span>t</span><span>u</span><span>a</span><span>l</span>
+      </p>
+
+      <div class="splash-bar"><span class="splash-bar-fill" id="splashBar"></span></div>
+    </div>
+
+    <button class="splash-skip" id="splashSkip" type="button" aria-label="Saltar intro">SKIP →</button>
+  </div>
+
+  <!-- ═══════ PROMO BAR (arriba de todo) ═══════ -->
+  <div class="promo-bar" id="promoBar">
+    <div class="promo-track">
+      <span>✦ RESERVA ONLINE &nbsp;·&nbsp; 15% OFF en tu primer ritual</span>
+      <span>✦ Nuevo: Paquete Parejas + Cena · $260.000</span>
+      <span>✦ Masaje Deportivo · Liberación profunda en 90 min</span>
+      <span>✦ Limpieza facial profunda · Desde $72.000</span>
+      <span>✦ RESERVA ONLINE &nbsp;·&nbsp; 15% OFF en tu primer ritual</span>
+      <span>✦ Nuevo: Paquete Parejas + Cena · $260.000</span>
+      <span>✦ Masaje Deportivo · Liberación profunda en 90 min</span>
+      <span>✦ Limpieza facial profunda · Desde $72.000</span>
+    </div>
+  </div>
+
+  <!-- ═══════ SCROLL PROGRESS BAR ═══════ -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ═══════ HEADER / NAV ═══════ -->
+  <header>
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/img/logo.png" alt="Fegurd Spa" class="nav-logo-img" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link-item">Nosotros</a></li>
+        <li class="has-drop">
+          <a href="#servicios" class="nav-link-item">Servicios</a>
+          <div class="dropdown">
+            <div class="dd-col">
+              <a href="#cat-masajes" class="dd-cat">Masajes <span>→</span></a>
+              <div class="dd-subs">
+                <a href="#cat-masajes">Relajación Deluxe</a>
+                <a href="#cat-masajes">Deportivo Profesional</a>
+                <a href="#cat-masajes">Descontracturante</a>
+                <a href="#cat-masajes">Reductor</a>
+                <a href="#cat-masajes">Prenatal</a>
+                <a href="#cat-masajes">Craneal</a>
+                <a href="#cat-masajes">Terapéutico</a>
+                <a href="#cat-masajes">Ritual Parejas</a>
+              </div>
+            </div>
+            <div class="dd-col">
+              <a href="#cat-depilaciones" class="dd-cat">Depilaciones <span>→</span></a>
+              <div class="dd-subs">
+                <a href="#cat-depilaciones">Cejas</a>
+                <a href="#cat-depilaciones">Axilas</a>
+                <a href="#cat-depilaciones">Piernas completas</a>
+                <a href="#cat-depilaciones">Bikini</a>
+                <a href="#cat-depilaciones">Rostro completo</a>
+              </div>
+            </div>
+            <div class="dd-col">
+              <a href="#cat-barberia" class="dd-cat">Barbería <span>→</span></a>
+              <div class="dd-subs">
+                <a href="#cat-barberia">Corte masculino</a>
+                <a href="#cat-barberia">Arreglo de barba</a>
+                <a href="#cat-barberia">Corte + barba</a>
+              </div>
+            </div>
+            <div class="dd-col">
+              <a href="#cat-peluqueria" class="dd-cat">Peluquería <span>→</span></a>
+              <div class="dd-subs">
+                <a href="#cat-peluqueria">Corte dama</a>
+                <a href="#cat-peluqueria">Cepillado</a>
+                <a href="#cat-peluqueria">Coloración</a>
+                <a href="#cat-peluqueria">Maquillaje profesional</a>
+              </div>
+            </div>
+            <div class="dd-col">
+              <a href="#cat-manos" class="dd-cat">Manicure y Pedicure <span>→</span></a>
+              <div class="dd-subs">
+                <a href="#cat-manos">Manicure clásico</a>
+                <a href="#cat-manos">Pedicure clásico</a>
+                <a href="#cat-manos">Acrílico / Esculpidas</a>
+                <a href="#cat-manos">Semipermanente</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#products" class="nav-link-item">Productos</a></li>
+        <li><a href="#testimonials" class="nav-link-item">Reseñas</a></li>
+        <li><a href="#find" class="nav-link-item">Contacto</a></li>
+      </ul>
+
+      <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="btn-primary nav-cta">
+        <span>Reservar</span>
+        <span class="nav-cta-arrow">→</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════
+         HERO V2 — GSAP parallax, layered shapes, mouse-driven
+    ══════════════════════════════════════════════════ -->
+    <section id="hero" class="hero2" aria-label="Bienvenida" data-hero>
+
+      <!-- soft tonal field -->
+      <div class="h2-field" aria-hidden="true">
+        <span class="h2-blob h2-blob--plum"></span>
+        <span class="h2-blob h2-blob--gold"></span>
+        <span class="h2-blob h2-blob--cream"></span>
+      </div>
+      <div class="h2-grain" aria-hidden="true"></div>
+
+      <!-- big watermark word that parallaxes -->
+      <div class="h2-watermark" data-parallax="0.25" aria-hidden="true">RITUAL</div>
+
+      <!-- floating layered shapes (GSAP-driven mouse + scroll parallax) -->
+      <div class="h2-layers" id="h2Layers" aria-hidden="true">
+        <span class="h2-shape h2-shape--ring"   data-depth="40"  data-float="6"></span>
+        <span class="h2-shape h2-shape--disc"   data-depth="-30" data-float="9"></span>
+        <span class="h2-shape h2-shape--pill"   data-depth="60"  data-float="5"></span>
+        <span class="h2-shape h2-shape--leaf"   data-depth="-50" data-float="8"></span>
+        <span class="h2-shape h2-shape--dot1"   data-depth="80"  data-float="4"></span>
+        <span class="h2-shape h2-shape--dot2"   data-depth="-70" data-float="7"></span>
+        <span class="h2-shape h2-shape--star"   data-depth="55"  data-float="6"></span>
+        <span class="h2-shape h2-shape--arc"    data-depth="-40" data-float="10"></span>
+
+        <!-- chip badges on top of shapes -->
+        <div class="h2-chip h2-chip--rate" data-depth="35" data-float="5">
+          <span class="chip-stars">★★★★★</span>
+          <strong>4.9</strong>
+          <em>+800 reseñas</em>
+        </div>
+        <div class="h2-chip h2-chip--ritual" data-depth="-25" data-float="6">
+          <span class="chip-mark">✦</span>
+          <div>
+            <strong>Ritual Deluxe</strong>
+            <em>60 min · $130.000</em>
+          </div>
+        </div>
+        <div class="h2-chip h2-chip--cert" data-depth="50" data-float="4">
+          <span class="chip-tick">✓</span>
+          <div>
+            <strong>Terapeutas certificados</strong>
+            <em>+12 años de oficio</em>
+          </div>
+        </div>
+      </div>
+
+      <!-- centered copy -->
+      <div class="h2-copy">
+        <p class="h2-eyebrow">
+          <span class="h2-pulse"></span>
+          SPA &amp; BIENESTAR · COLOMBIA
+        </p>
+
+        <h1 class="h2-title" data-headline>
+          <span class="h2-row"><span class="h2-word" data-w>Respira</span><span class="h2-amp">&amp;</span></span>
+          <span class="h2-row"><em class="h2-word" data-w>florece</em></span>
+          <span class="h2-row"><span class="h2-word" data-w>en</span> <span class="h2-word h2-word--accent" data-w>Fegurd</span></span>
+        </h1>
+
+        <p class="h2-sub" data-fade>
+          Rituales de belleza, masajes y bienestar diseñados a mano —
+          para devolverte calma, restaurar tu piel y reconectarte
+          con lo esencial.
+        </p>
+
+        <div class="h2-ctas" data-fade>
+          <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="h2-cta h2-cta--primary" data-magnet>
+            <span class="h2-cta-label">Reserva tu ritual</span>
+            <span class="h2-cta-arrow">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="#servicios" class="h2-cta h2-cta--ghost">
+            <span class="h2-cta-dot"></span>
+            Ver rituales
+          </a>
+        </div>
+
+        <ul class="h2-meta" data-fade>
+          <li><strong>+12</strong><em>años de oficio</em></li>
+          <li class="sep"></li>
+          <li><strong>14</strong><em>servicios premium</em></li>
+          <li class="sep"></li>
+          <li><strong>12k+</strong><em>clientes felices</em></li>
+        </ul>
+      </div>
+
+      <!-- bottom marquee strip -->
+      <div class="h2-strip" aria-hidden="true">
+        <div class="h2-strip-track">
+          <span>Masajes</span><i>✦</i>
+          <span>Faciales</span><i>✦</i>
+          <span>Manicure</span><i>✦</i>
+          <span>Barbería</span><i>✦</i>
+          <span>Peluquería</span><i>✦</i>
+          <span>Rituales para parejas</span><i>✦</i>
+          <span>Masajes</span><i>✦</i>
+          <span>Faciales</span><i>✦</i>
+          <span>Manicure</span><i>✦</i>
+          <span>Barbería</span><i>✦</i>
+          <span>Peluquería</span><i>✦</i>
+          <span>Rituales para parejas</span><i>✦</i>
+        </div>
+      </div>
+
+      <a href="#about" class="h2-scroll" aria-label="Bajar">
+        <span class="h2-scroll-line"></span>
+        <span>SCROLL</span>
+      </a>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE — Tratamientos en rotación
+    ══════════════════════════════════════════════════ -->
+    <section class="marquee-section" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Masaje Relajación</span><span class="mq-star">✦</span>
+          <span>Limpieza Facial</span><span class="mq-star">✦</span>
+          <span>Ritual Parejas</span><span class="mq-star">✦</span>
+          <span>Masaje Deportivo</span><span class="mq-star">✦</span>
+          <span>Maquillaje</span><span class="mq-star">✦</span>
+          <span>Manicura</span><span class="mq-star">✦</span>
+          <span>Cejas</span><span class="mq-star">✦</span>
+          <span>Reflexología</span><span class="mq-star">✦</span>
+          <!-- duplicate for infinite loop -->
+          <span>Masaje Relajación</span><span class="mq-star">✦</span>
+          <span>Limpieza Facial</span><span class="mq-star">✦</span>
+          <span>Ritual Parejas</span><span class="mq-star">✦</span>
+          <span>Masaje Deportivo</span><span class="mq-star">✦</span>
+          <span>Maquillaje</span><span class="mq-star">✦</span>
+          <span>Manicura</span><span class="mq-star">✦</span>
+          <span>Cejas</span><span class="mq-star">✦</span>
+          <span>Reflexología</span><span class="mq-star">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         ABOUT — Sticky column + reveal de texto por líneas
+    ══════════════════════════════════════════════════ -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="about-grid">
+
+        <div class="about-media">
+          <div class="about-stack">
+            <div class="about-media-card ams-a">
+              <img src="assets/img/services/masaje-parejas.png" alt="" class="spa-photo" />
+            </div>
+            <div class="about-media-card ams-b">
+              <img src="assets/img/services/prenatal.jpg" alt="" class="spa-photo" />
+            </div>
+            <div class="about-media-card ams-c">
+              <img src="assets/img/services/masaje-deportivo.png" alt="" class="spa-photo" />
+            </div>
+            <div class="about-float-badge">
+              <div class="afb-num">12k+</div>
+              <div class="afb-lbl">clientes<br/>atendidos</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="label section-label">— Quiénes somos</p>
+          <h2 id="about-title" class="big-headline">
+            <span class="hl-line">Un santuario</span>
+            <span class="hl-line">donde la calma,</span>
+            <span class="hl-line"><em>la piel</em> y el cuerpo</span>
+            <span class="hl-line">vuelven a casa.</span>
+          </h2>
+          <p class="about-body">
+            Fegurd Spa nace del oficio artesanal del cuidado. Cada ritual es
+            diseñado como una experiencia completa: aromas, manos expertas,
+            productos naturales y un ambiente pensado para que olvides todo
+            lo de afuera.
+          </p>
+
+          <ul class="about-points">
+            <li><span class="ap-num">01</span><span>Terapeutas certificados con más de 12 años de experiencia.</span></li>
+            <li><span class="ap-num">02</span><span>Productos botánicos de línea profesional, libres de crueldad.</span></li>
+            <li><span class="ap-num">03</span><span>Rituales personalizados para tu piel y tu momento.</span></li>
+          </ul>
+
+          <a href="#service" class="btn-ghost btn-ghost--dark">
+            Conoce nuestros rituales
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIOS — Secciones verticales por categoría
+    ══════════════════════════════════════════════════ -->
+    <section id="servicios" class="cats-wrapper" aria-labelledby="servicios-title">
+
+      <div class="cats-intro">
+        <p class="label">— Rituales &amp; servicios</p>
+        <h2 id="servicios-title" class="cats-title">
+          Diseñados<br/><em>para ti.</em>
+        </h2>
+        <p class="cats-sub">Cinco universos de bienestar. Elige el tuyo.</p>
+        <nav class="cats-nav" aria-label="Categorías">
+          <a href="#cat-masajes">Masajes</a>
+          <a href="#cat-depilaciones">Depilaciones</a>
+          <a href="#cat-barberia">Barbería</a>
+          <a href="#cat-peluqueria">Peluquería</a>
+          <a href="#cat-manos">Manicure &amp; Pedicure</a>
+        </nav>
+      </div>
+
+      <!-- ——— CAT 01 · MASAJES ——— -->
+      <div id="cat-masajes" class="cat-block cat-block--dark">
+        <div class="cat-head">
+          <div class="cat-head-idx">01</div>
+          <div class="cat-head-main">
+            <p class="label label--light">— Categoría</p>
+            <h3>Masajes</h3>
+            <p class="cat-head-sub">Manos expertas y aceites botánicos para disolver tensión, recuperar cuerpo y mente.</p>
+          </div>
+          <img src="assets/img/services/masaje-relax.png" alt="" class="cat-head-img spa-photo" />
+        </div>
+        <div class="cat-grid">
+          <article class="cat-item"><div class="cat-item-img"><img src="assets/img/services/masaje-relax.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><h4>Relajación Deluxe</h4><p>Presión media, aceites cálidos. Una hora para soltar todo.</p><div class="cat-item-foot"><span class="cat-price">$130.000</span><span class="cat-dur">60 min</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Masaje%20Relajación%20Deluxe" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-img"><img src="assets/img/services/masaje-deportivo.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><h4>Deportivo Profesional</h4><p>Intensivo para deportistas. Alivia cargas y optimiza recuperación.</p><div class="cat-item-foot"><span class="cat-price">$220.000</span><span class="cat-dur">2 h</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Masaje%20Deportivo" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-img"><img src="assets/img/services/masaje-descontracturante.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><h4>Descontracturante</h4><p>Presión profunda sobre nudos y contracturas musculares.</p><div class="cat-item-foot"><span class="cat-price">$110.000</span><span class="cat-dur">60 min</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Masaje%20Descontracturante" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-img"><img src="assets/img/services/masaje-reductor.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><h4>Reductor</h4><p>Técnica específica para moldear y activar circulación.</p><div class="cat-item-foot"><span class="cat-price">$90.000</span><span class="cat-dur">60 min</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Masaje%20Reductor" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-img"><img src="assets/img/services/prenatal.jpg" alt="" class="spa-photo"/></div><div class="cat-item-body"><h4>Prenatal</h4><p>Suave y seguro para futuras mamás. Alivio de espalda y piernas.</p><div class="cat-item-foot"><span class="cat-price">$100.000</span><span class="cat-dur">60 min</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Masaje%20Prenatal" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-img"><img src="assets/img/services/craneal.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><h4>Craneal</h4><p>Libera tensión acumulada en cabeza, cuello y hombros.</p><div class="cat-item-foot"><span class="cat-price">$70.000</span><span class="cat-dur">45 min</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Masaje%20Craneal" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-img"><img src="assets/img/services/masaje-terapeutico.jpg" alt="" class="spa-photo"/></div><div class="cat-item-body"><h4>Terapéutico</h4><p>Diagnóstico y trabajo específico sobre zonas problemáticas.</p><div class="cat-item-foot"><span class="cat-price">$120.000</span><span class="cat-dur">60 min</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Masaje%20Terapéutico" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item cat-item--featured"><div class="cat-item-img"><img src="assets/img/services/masaje-parejas.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><div class="cat-flag">★ MÁS POPULAR</div><h4>Ritual para Parejas</h4><p>Suite privada, velas, aromaterapia. Una experiencia íntima.</p><div class="cat-item-foot"><span class="cat-price">$260.000</span><span class="cat-dur">90 min</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Ritual%20Parejas" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+        </div>
+      </div>
+
+      <!-- ——— CAT 02 · DEPILACIONES ——— -->
+      <div id="cat-depilaciones" class="cat-block cat-block--cream">
+        <div class="cat-head">
+          <div class="cat-head-idx">02</div>
+          <div class="cat-head-main">
+            <p class="label">— Categoría</p>
+            <h3>Depilaciones</h3>
+            <p class="cat-head-sub">Cera tibia, técnica suave y resultados impecables. Piel lisa sin irritación.</p>
+          </div>
+          <img src="assets/img/services/cejas.png" alt="" class="cat-head-img spa-photo" />
+        </div>
+        <div class="cat-grid">
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Cejas</h4><p>Diseño y limpieza para enmarcar tu mirada.</p><div class="cat-item-foot"><span class="cat-price">$15.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Depilación%20Cejas" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Axilas</h4><p>Rápido, efectivo y con productos calmantes.</p><div class="cat-item-foot"><span class="cat-price">$20.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Depilación%20Axilas" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Piernas completas</h4><p>Piel lisa y suave de muslo a tobillo.</p><div class="cat-item-foot"><span class="cat-price">$50.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Depilación%20Piernas" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Bikini</h4><p>Zona íntima con técnica suave y cera tibia.</p><div class="cat-item-foot"><span class="cat-price">$35.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Depilación%20Bikini" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Rostro completo</h4><p>Vello facial removido con productos no agresivos.</p><div class="cat-item-foot"><span class="cat-price">$40.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Depilación%20Rostro" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+        </div>
+      </div>
+
+      <!-- ——— CAT 03 · BARBERÍA ——— -->
+      <div id="cat-barberia" class="cat-block cat-block--dark">
+        <div class="cat-head">
+          <div class="cat-head-idx">03</div>
+          <div class="cat-head-main">
+            <p class="label label--light">— Categoría</p>
+            <h3>Barbería</h3>
+            <p class="cat-head-sub">Corte clásico o moderno, barba perfilada y toalla caliente. Rituales para él.</p>
+          </div>
+          <img src="assets/img/services/corte-masculino.png" alt="" class="cat-head-img spa-photo" />
+        </div>
+        <div class="cat-grid">
+          <article class="cat-item"><div class="cat-item-img"><img src="assets/img/services/corte-masculino.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><h4>Corte masculino</h4><p>Corte clásico o moderno con máquina y tijera.</p><div class="cat-item-foot"><span class="cat-price">$25.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Corte%20Masculino" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Arreglo de barba</h4><p>Perfilado, recorte y tratamiento con toalla caliente.</p><div class="cat-item-foot"><span class="cat-price">$18.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Arreglo%20de%20Barba" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item cat-item--featured"><div class="cat-item-body cat-item-body--solo"><div class="cat-flag">★ COMBO</div><h4>Corte + barba</h4><p>El ritual completo. Cabello y barba en una sola visita.</p><div class="cat-item-foot"><span class="cat-price">$38.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Corte%20más%20Barba" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+        </div>
+      </div>
+
+      <!-- ——— CAT 04 · PELUQUERÍA ——— -->
+      <div id="cat-peluqueria" class="cat-block cat-block--cream">
+        <div class="cat-head">
+          <div class="cat-head-idx">04</div>
+          <div class="cat-head-main">
+            <p class="label">— Categoría</p>
+            <h3>Peluquería</h3>
+            <p class="cat-head-sub">Cortes, peinados, color y maquillaje. Tu look para cualquier ocasión.</p>
+          </div>
+          <img src="assets/img/services/maquillaje.png" alt="" class="cat-head-img spa-photo" />
+        </div>
+        <div class="cat-grid">
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Corte dama</h4><p>Diseño personalizado según rostro y estilo.</p><div class="cat-item-foot"><span class="cat-price">$35.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Corte%20Dama" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Cepillado</h4><p>Alisado profesional con acabado brillante.</p><div class="cat-item-foot"><span class="cat-price">$28.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Cepillado" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Coloración</h4><p>Tinte, mechas o balayage con tonos de alta calidad.</p><div class="cat-item-foot"><span class="cat-price">desde $90.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Coloración" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item cat-item--featured"><div class="cat-item-img"><img src="assets/img/services/maquillaje.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><div class="cat-flag">★ OCASIONES</div><h4>Maquillaje profesional</h4><p>Eventos, sesiones, novias. Técnica adaptada a tu piel.</p><div class="cat-item-foot"><span class="cat-price">$160.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Maquillaje%20Profesional" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+        </div>
+      </div>
+
+      <!-- ——— CAT 05 · MANICURE Y PEDICURE ——— -->
+      <div id="cat-manos" class="cat-block cat-block--dark">
+        <div class="cat-head">
+          <div class="cat-head-idx">05</div>
+          <div class="cat-head-main">
+            <p class="label label--light">— Categoría</p>
+            <h3>Manicure &amp; Pedicure</h3>
+            <p class="cat-head-sub">Detalle, precisión y mimo para manos y pies. Clásico, acrílico o semipermanente.</p>
+          </div>
+          <img src="assets/img/services/manicura.png" alt="" class="cat-head-img spa-photo" />
+        </div>
+        <div class="cat-grid">
+          <article class="cat-item"><div class="cat-item-img"><img src="assets/img/services/manicura.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><h4>Manicure clásico</h4><p>Limado, cutícula y esmaltado tradicional.</p><div class="cat-item-foot"><span class="cat-price">$25.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Manicure%20Clásico" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Pedicure clásico</h4><p>Exfoliación, hidratación y esmaltado para pies.</p><div class="cat-item-foot"><span class="cat-price">$35.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Pedicure%20Clásico" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item cat-item--featured"><div class="cat-item-img"><img src="assets/img/services/acrilico.png" alt="" class="spa-photo"/></div><div class="cat-item-body"><div class="cat-flag">★ MÁS POPULAR</div><h4>Acrílico / Esculpidas</h4><p>Uñas esculpidas con acrílico de alta duración.</p><div class="cat-item-foot"><span class="cat-price">$70.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Acrílico" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+          <article class="cat-item"><div class="cat-item-body cat-item-body--solo"><h4>Semipermanente</h4><p>Esmaltado de larga duración, brillo impecable.</p><div class="cat-item-foot"><span class="cat-price">$45.000</span><a href="https://wa.me/573127072996?text=Hola,%20quiero%20reservar%20Semipermanente" target="_blank" rel="noopener" class="cat-book">Reservar →</a></div></article>
+        </div>
+      </div>
+
+      <!-- CTA final de servicios -->
+      <div class="cats-cta">
+        <p class="label">— Y mucho más</p>
+        <h3>¿Buscas algo <em>a medida?</em></h3>
+        <p>Diseñamos rituales personalizados. Escríbenos y lo coordinamos.</p>
+        <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="btn-primary btn-primary--lg">
+          Hablemos <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         LEGACY hscroll track — oculto pero conservado (compat JS)
+    ══════════════════════════════════════════════════ -->
+    <div style="display:none" aria-hidden="true">
+      <div id="service"></div>
+      <div id="hscrollSticky" data-legacy-void="1"></div>
+      <div id="hscrollTrack" data-legacy-void="1">
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         PINNED REVEAL — frase grande + mancha que crece
+    ══════════════════════════════════════════════════ -->
+    <section id="reveal" class="reveal-phrase-section" aria-hidden="true">
+      <div class="reveal-phrase-sticky">
+        <div class="reveal-bg" id="revealBg"></div>
+        <h2 class="reveal-phrase" id="revealPhrase">
+          <span>No</span>
+          <span>es</span>
+          <span>un</span>
+          <span>spa.</span>
+          <span class="em">Es</span>
+          <span class="em">un</span>
+          <span class="em">refugio.</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTS — Grid editorial con hover
+    ══════════════════════════════════════════════════ -->
+    <section id="products" aria-labelledby="products-title">
+      <div class="products-header">
+        <div>
+          <p class="label section-label">— Tratamientos express</p>
+          <h2 id="products-title" class="big-headline">
+            <span class="hl-line">Ritmo, cuidado,</span>
+            <span class="hl-line"><em>resultados</em>.</span>
+          </h2>
+        </div>
+        <p class="products-sub">
+          Pequeños tratamientos de gran impacto. Ideales para regalarte una pausa
+          sin salir de tu semana.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="prod-card prod-card--tall">
+          <div class="prod-img">
+            <img src="assets/img/services/manicura.png" alt="" class="spa-photo" />
+          </div>
+          <div class="prod-meta">
+            <div class="prod-name">Manicura Semipermanente</div>
+            <div class="prod-price">$50.000</div>
+          </div>
+          <div class="prod-hover">Reservar →</div>
+        </a>
+
+        <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="prod-card">
+          <div class="prod-img">
+            <img src="assets/img/services/acrilico.png" alt="" class="spa-photo" />
+          </div>
+          <div class="prod-meta">
+            <div class="prod-name">Uñas en Acrílico</div>
+            <div class="prod-price">$130.000</div>
+          </div>
+          <div class="prod-hover">Reservar →</div>
+        </a>
+
+        <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="prod-card prod-card--wide">
+          <div class="prod-img">
+            <img src="assets/img/services/facial-acne.png" alt="" class="spa-photo" />
+          </div>
+          <div class="prod-meta">
+            <div class="prod-name">Facial Antiacné</div>
+            <div class="prod-price">$80.000</div>
+          </div>
+          <div class="prod-hover">Reservar →</div>
+        </a>
+
+        <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="prod-card">
+          <div class="prod-img">
+            <img src="assets/img/services/corte-masculino.png" alt="" class="spa-photo" />
+          </div>
+          <div class="prod-meta">
+            <div class="prod-name">Corte Masculino</div>
+            <div class="prod-price">$24.000</div>
+          </div>
+          <div class="prod-hover">Reservar →</div>
+        </a>
+
+        <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="prod-card">
+          <div class="prod-img">
+            <img src="assets/img/services/craneal.png" alt="" class="spa-photo" />
+          </div>
+          <div class="prod-meta">
+            <div class="prod-name">Masaje Craneofacial</div>
+            <div class="prod-price">$130.000</div>
+          </div>
+          <div class="prod-hover">Reservar →</div>
+        </a>
+
+        <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="prod-card prod-card--tall">
+          <div class="prod-img">
+            <img src="assets/img/services/masaje-descontracturante.png" alt="" class="spa-photo" />
+          </div>
+          <div class="prod-meta">
+            <div class="prod-name">Descontracturante</div>
+            <div class="prod-price">$180.000</div>
+          </div>
+          <div class="prod-hover">Reservar →</div>
+        </a>
+
+        <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="prod-card">
+          <div class="prod-img">
+            <img src="assets/img/services/masaje-reductor.png" alt="" class="spa-photo" />
+          </div>
+          <div class="prod-meta">
+            <div class="prod-name">Masaje Reductor</div>
+            <div class="prod-price">$150.000</div>
+          </div>
+          <div class="prod-hover">Reservar →</div>
+        </a>
+
+        <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="prod-card">
+          <div class="prod-img">
+            <img src="assets/img/services/prenatal.jpg" alt="" class="spa-photo" />
+          </div>
+          <div class="prod-meta">
+            <div class="prod-name">Masaje Prenatal</div>
+            <div class="prod-price">$140.000</div>
+          </div>
+          <div class="prod-hover">Reservar →</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS — counter up animado
+    ══════════════════════════════════════════════════ -->
+    <section class="stats-section" aria-label="Cifras Fegurd Spa">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-num" data-count="12000" data-suffix="+">0</div>
+          <div class="stat-lbl">Clientes atendidos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="14" data-suffix="">0</div>
+          <div class="stat-lbl">Servicios premium</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="4.9" data-suffix="★" data-float="1">0</div>
+          <div class="stat-lbl">Reseñas en Google</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="4" data-suffix=" años">0</div>
+          <div class="stat-lbl">De experiencia</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         TESTIMONIALS
+    ══════════════════════════════════════════════════ -->
+    <section id="testimonials" aria-labelledby="tst-title">
+      <div class="tst-header">
+        <p class="label section-label">— Lo que dicen</p>
+        <h2 id="tst-title" class="big-headline">
+          <span class="hl-line">Historias que</span>
+          <span class="hl-line"><em>se sienten.</em></span>
+        </h2>
+      </div>
+
+      <div class="tst-grid">
+        <blockquote class="tst-card">
+          <div class="tst-stars">★★★★★</div>
+          <p>"El masaje deportivo fue exactamente lo que mi espalda necesitaba.
+          Salí sintiéndome 10 años más joven. Volveré cada mes."</p>
+          <footer>
+            <div class="tst-av">M</div>
+            <div>
+              <div class="tst-name">María Camila</div>
+              <div class="tst-role">Cliente desde 2023</div>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="tst-card tst-card--accent">
+          <div class="tst-stars">★★★★★</div>
+          <p>"El ritual para parejas fue un regalo increíble.
+          El ambiente, las velas, la música — cada detalle impecable."</p>
+          <footer>
+            <div class="tst-av">A</div>
+            <div>
+              <div class="tst-name">Andrés &amp; Laura</div>
+              <div class="tst-role">Aniversario</div>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="tst-card">
+          <div class="tst-stars">★★★★★</div>
+          <p>"La limpieza facial cambió mi piel. Recomiendo Fegurd a todas mis amigas.
+          Profesionalismo real."</p>
+          <footer>
+            <div class="tst-av">V</div>
+            <div>
+              <div class="tst-name">Valentina R.</div>
+              <div class="tst-role">Cliente frecuente</div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CTA — Banner de conversión
+    ══════════════════════════════════════════════════ -->
+    <section class="cta-banner" aria-label="Reservar">
+      <div class="cta-inner">
+        <p class="label label--light">— Tu momento empieza aquí</p>
+        <h2 class="cta-title">
+          Reserva hoy,<br/><em>agradécetelo mañana.</em>
+        </h2>
+        <p class="cta-sub">15% OFF en tu primer ritual · Reserva online o por WhatsApp.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="btn-primary btn-primary--lg btn-primary--light">
+            <span>Reservar ritual</span> <span class="btn-arrow">→</span>
+          </a>
+          <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="btn-ghost btn-ghost--light">
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+      <div class="cta-orb" aria-hidden="true"></div>
+      <div class="cta-orb cta-orb--2" aria-hidden="true"></div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         FIND US
+    ══════════════════════════════════════════════════ -->
+    <section id="find" aria-label="Encuéntranos">
+
+      <div class="find-title-overlay" aria-hidden="true">
+        <p class="label label--light">— Visítanos</p>
+        <h2>Encuéntranos</h2>
+      </div>
+
+      <iframe
+        class="find-map-bg"
+        src="https://maps.google.com/maps?q=fegurd+spa&output=embed"
+        title="Fegurd Spa en Google Maps"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <aside class="find-glass-card">
+        <div>
+          <span class="hours-badge">Abierto ahora</span>
+          <p class="find-info-title">Horarios</p>
+          <ul class="hours-list">
+            <li class="hours-row">
+              <span class="hours-day">Lun — Sáb</span>
+              <span class="hours-time">9:00 AM – 7:00 PM</span>
+            </li>
+            <li class="hours-row">
+              <span class="hours-day">Domingo</span>
+              <span class="hours-time">10:00 AM – 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="find-info-title">Contáctanos</p>
+          <ul class="hours-list">
+            <li class="hours-row">
+              <span class="hours-day hours-day--secondary">📞 Teléfono</span>
+              <a href="https://wa.me/573127072996" target="_blank" rel="noopener" class="contact-value">+57 312 707 2996</a>
+            </li>
+            <li class="hours-row">
+              <span class="hours-day hours-day--secondary">✉ Correo</span>
+              <span class="contact-value">info@fegurdspa.com</span>
+            </li>
+            <li class="hours-row">
+              <span class="hours-day hours-day--secondary">📍 Ubicación</span>
+              <span class="contact-value">Colombia</span>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href="https://www.google.com/maps/place/fegurd+spa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary btn-primary--centered"
+        >
+          Cómo llegar <span class="btn-arrow">→</span>
+        </a>
+      </aside>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-headline">
+      <h2>
+        <span class="fh-line">Respira.</span>
+        <span class="fh-line"><em>Suelta.</em></span>
+        <span class="fh-line">Florece.</span>
+      </h2>
+    </div>
+
+    <div class="footer-grid">
+      <div>
+        <img src="assets/img/logo.png" alt="Fegurd Spa" class="footer-logo" />
+        <p class="footer-tag">Rituales de belleza y bienestar<br/>diseñados en Colombia.</p>
+        <address class="footer-contact">
+          <div class="footer-contact-item">
+            <span aria-hidden="true">✉</span>
+            <a href="mailto:info@fegurdspa.com">info@fegurdspa.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <span aria-hidden="true">⊙</span>
+            <span>Colombia</span>
+          </div>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h4>Rituales</h4>
+        <ul class="footer-links">
+          <li><a href="#service">Masaje Deluxe</a></li>
+          <li><a href="#service">Limpieza Facial</a></li>
+          <li><a href="#service">Ritual Parejas</a></li>
+          <li><a href="#service">Masaje Deportivo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Nosotros</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Quiénes somos</a></li>
+          <li><a href="#testimonials">Reseñas</a></li>
+          <li><a href="#find">Ubicación</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p class="newsletter-sub">Ofertas, rituales nuevos y tips de bienestar — una vez al mes.</p>
+        <div class="newsletter-form">
+          <label for="newsletterEmail" class="sr-only">Tu correo</label>
+          <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="tu@correo.com"
+            autocomplete="email"
+          />
+          <button id="newsletterBtn" aria-label="Suscribirse">→</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Fegurd Spa · Todos los derechos reservados.</p>
+      <nav class="footer-legal" aria-label="Legal">
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+        <a href="#">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ═══════ Cursor spotlight ═══════ -->
+  <div class="cursor-spot" id="cursorSpot" aria-hidden="true"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script src="splash.js?v=1"></script>
+  <script src="hero-v2.js?v=1"></script>
+</body>
+</html>
